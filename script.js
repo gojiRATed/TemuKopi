@@ -62,6 +62,8 @@ const cafes = [
     rating: "4.9",
     location: "Mojokerto",
     description: "Cozy minimalist cafe.",
+    accountName: "TemuKopi User",
+    review: "Tempatnya nyaman, estetik, dan pelayanannya ramah. Cocok untuk hangout atau kerja santai.",
     image: "asset/continent.kohi_.jpg",
     category: "focus aesthetic",
     tags: "Focus,Aesthetic",
@@ -71,11 +73,14 @@ const cafes = [
     website: "#"
   },
 
+
   {
     title: "Coffee Factory",
     rating: "5.0",
     location: "Mojokerto",
     description: "Industrial coffee shop.",
+    accountName: "TemuKopi User",
+    review: "Ruangannya luas dan vibe industrinya kuat. Minuman kopi berasa dan pas untuk nongkrong santai.",
     image: "asset/CF.jpg",
     category: "hangout aesthetic",
     tags: "Hangout,Aesthetic",
@@ -85,11 +90,14 @@ const cafes = [
     website: "#"
   },
 
+
   {
     title: "Tiga Lapan Samaran",
     rating: "4.8",
     location: "Mojokerto",
     description: "Outdoor cafe.",
+    accountName: "TemuKopi User",
+    review: "Suasana outdoor-nya adem, tempatnya estetik buat foto dan ngobrol. Kopinya enak dan nggak bikin seret.",
     image: "asset/tiga-lapan-samaran.jpg",
     category: "hangout aesthetic",
     tags: "Hangout,Aesthetic",
@@ -99,11 +107,14 @@ const cafes = [
     website: "#"
   },
 
+
   {
     title: "Bersaudara Coffee",
     rating: "5.0",
     location: "Mojokerto",
     description: "Cozy coffe shop for WFC.",
+    accountName: "TemuKopi User",
+    review: "Cocok buat kerja santai: tenang, kursinya nyaman, dan akses suasananya mendukung fokus. Kopinya balance.",
     image: "asset/bersaudara.jpg",
     category: "focus aesthetic",
     tags: "Focus,Aesthetic",
@@ -113,11 +124,14 @@ const cafes = [
     website: "#"
   },
 
+
   {
     title: "Alam Teduh",
     rating: "4.9",
     location: "Mojokerto",
     description: "Nature-themed cafe with lush greenery.",
+    accountName: "TemuKopi User",
+    review: "Green vibe-nya bikin rileks. Banyak spot foto dan minuman cukup konsisten. Pelayanannya juga cepat.",
     image: "asset/alamteduh.jpg",
     category: "focus hangout",
     tags: "Focus,Hangout",
@@ -127,11 +141,14 @@ const cafes = [
     website: "#"
   },
 
+
   {
     title: "Coffee Factory",
     rating: "5.0",
     location: "Mojokerto",
     description: "Industrial coffee shop.",
+    accountName: "TemuKopi User",
+    review: "Tempatnya cocok buat hangout. Interiornya menarik dan rasanya kopi terasa.",
     image: "asset/CF.jpg",
     category: "hangout aesthetic",
     tags: "Hangout,Aesthetic",
@@ -141,6 +158,7 @@ const cafes = [
     website: "#"
   }
 ];
+
 
 const cafeList =
   document.querySelector("#cafeList");
@@ -156,8 +174,11 @@ cafeList.innerHTML = cafes.map(cafe => `
     data-rating="${cafe.rating}"
     data-location="${cafe.location}"
     data-description="${cafe.description}"
+    data-account="${cafe.accountName}"
+    data-review="${cafe.review}"
     data-image="${cafe.image}"
     data-tags="${cafe.tags}"
+
     data-maps="${cafe.maps}"
     data-instagram="${cafe.instagram}"
     data-tiktok="${cafe.tiktok}"
@@ -243,6 +264,13 @@ document.querySelectorAll(".open-modal")
 
     document.getElementById("modalDescription")
       .textContent = data.description;
+
+    document.getElementById("modalAccountName")
+      .textContent = data.account || "TemuKopi User";
+
+    document.getElementById("modalReviewText")
+      .textContent = data.review || "";
+
 
     document.getElementById("modalMaps")
       .href = data.maps;

@@ -322,7 +322,7 @@
   top: 0;
   left: 0;
   z-index: 1;
-  filter: brightness(0.8);
+  filter: brightnes(0.8);
 }
 
 
@@ -952,6 +952,7 @@
 }
 
 
+
 .cafe-modal {
   border-radius: 30px;
   overflow: hidden;
@@ -1047,6 +1048,47 @@
 
   transform: translateY(-5px);
 }
+
+/* Modal - Account & Review */
+.modal-review-card {
+  background: rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(25,135,84,0.12);
+  border: 1px solid rgba(25,135,84,0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #198754;
+}
+
+.review-avatar i {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.review-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.review-account {
+  font-size: 1rem;
+  color: #111;
+}
+
+.review-text {
+  color: #6c757d;
+  line-height: 1.6;
+} 
+
 
 #saveButton.saved {
   background: #111;
