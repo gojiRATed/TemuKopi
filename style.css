@@ -106,8 +106,6 @@
   );
 }
 
-/* LOGIN */
-
 .login-wrapper{
   position:relative;
   z-index:2;
@@ -138,7 +136,6 @@
   color:rgba(255,255,255,.7);
 }
 
-/* INPUT */
 
 .input-box{
   position:relative;
@@ -175,8 +172,6 @@
   color:rgba(255,255,255,.5);
 }
 
-/* BUTTON */
-
 .login-btn,
 .google-btn{
   width:100%;
@@ -209,8 +204,6 @@
   background:rgba(255,255,255,.1);
 }
 
-/* LINK */
-
 .login-link{
   text-decoration:none;
   transition:var(--transition);
@@ -219,8 +212,6 @@
 .login-link:hover{
   color:var(--white);
 }
-
-/* DIVIDER */
 
 .divider{
   position:relative;
@@ -247,8 +238,6 @@
 .divider::after{
   right:0;
 }
-
-/* RESPONSIVE */
 
 @media(max-width:576px){
 
@@ -324,7 +313,7 @@
   z-index: 1;
 }
 
-/* Background image */
+
 .hero-bg {
   position: absolute;
   width: 100%;
@@ -336,7 +325,7 @@
   filter: brightness(0.8);
 }
 
-/* Overlay content */
+
 .hero-overlay {
   position: relative;
   z-index: 2;
@@ -352,11 +341,11 @@
 }
 
 .stars i {
-  color: #ffc107; /* warna bintang */
+  color: #ffc107;
   font-size: 1.2rem;
 }
 
-/* Card dasar */
+
 .rec-card {
   position: relative;
   overflow: hidden;
@@ -370,7 +359,7 @@
   transition: var(--transition);
 }
 
-/* Ukuran beda (kolase feel) */
+
 .rec-card.large {
   height: 600px;
   width: 100%;
@@ -384,7 +373,7 @@
   height: 280px;
 }
 
-/* Overlay text */
+
 .rec-card .overlay {
   position: absolute;
   bottom: 0;
@@ -415,7 +404,7 @@
   scroll-snap-align: start;
 }
 
-/* Hide scrollbar */
+
 .mood-scroll::-webkit-scrollbar {
   display: none;
 }
@@ -435,7 +424,7 @@
   background: var(--primary);
 }
 
-/* CARD */
+
 .coffee-card {
   position: relative;
   overflow: hidden;
@@ -450,7 +439,6 @@
   transition: var(--transition);
 }
 
-/* Overlay */
 .card-overlay {
   position: absolute;
   bottom: 0;
@@ -461,7 +449,6 @@
   background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
 }
 
-/* Mood Tag */
 .cafe-tag {
   display: inline-block;
   padding: 5px 12px;
@@ -471,7 +458,6 @@
   margin-bottom: 10px;
 }
 
-/* MAP */
 .map-preview {
   position: relative;
   overflow: hidden;
@@ -486,7 +472,6 @@
   filter: grayscale(1) contrast(1.1);
 }
 
-/* FLOATING CARD */
 .map-card {
   position: absolute;
   bottom: 20px;
@@ -516,8 +501,6 @@
   color: white;
 }
 
-
-/* PLACE LIST */
 .place-list {
   display: flex;
   flex-direction: column;
@@ -558,7 +541,6 @@
   overflow: hidden;
 }
 
-/* CARD */
 .glass-card {
   position: relative;
   overflow: hidden;
@@ -578,14 +560,12 @@
   transform: translateY(-10px);
 }
 
-/* IMAGE */
 .glass-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* OVERLAY */
 .glass-overlay {
   position: absolute;
   inset: 0;
@@ -605,7 +585,6 @@
     );
 }
 
-/* RATING */
 .glass-rating {
   padding: 5px 12px;
 
@@ -623,7 +602,7 @@
   color: #ffc107;
 }
 
-/* BUTTON */
+
 .glass-btn {
   border: none;
   outline: none;
@@ -661,7 +640,6 @@
   overflow: hidden;
 }
 
-/* TOP BORDER */
 .footer-section::before {
   content: "";
 
@@ -677,27 +655,23 @@
   background: rgba(255,255,255,0.08);
 }
 
-/* LOGO */
 .footer-logo {
   font-size: 2rem;
   font-weight: 700;
   color: white;
 }
 
-/* DESCRIPTION */
 .footer-desc {
   color: rgba(255,255,255,0.6);
   line-height: 1.8;
 }
 
-/* TITLE */
 .footer-title {
   color: white;
   margin-bottom: 20px;
   font-weight: 600;
 }
 
-/* LINKS */
 .footer-links {
   list-style: none;
   padding: 0;
@@ -719,7 +693,6 @@
   color: white;
 }
 
-/* SOCIAL */
 .footer-social a {
   width: 45px;
   height: 45px;
@@ -747,7 +720,6 @@
   background: rgba(255,255,255,0.12);
 }
 
-/* INPUT */
 .footer-input {
   overflow: hidden;
 
@@ -789,7 +761,6 @@
   background: #157347;
 }
 
-/* BOTTOM */
 .footer-bottom {
   margin-top: 70px;
   padding-top: 25px;
@@ -816,15 +787,11 @@
   color: white;
 }
 
-/* =========================
-   EXPLORE SECTION
-========================= */
 
 .explore-section {
   background: #f8f9fa;
 }
 
-/* LABEL */
 .explore-label {
   padding: 8px 18px;
 
@@ -837,7 +804,6 @@
   font-weight: 600;
 }
 
-/* SEARCH */
 .search-box {
   background: rgba(255,255,255,0.05);
 
@@ -856,7 +822,6 @@
   background: transparent;
 }
 
-/* FILTER */
 .filter-wrapper {
   overflow-x: auto;
 }
@@ -865,7 +830,6 @@
   display: none;
 }
 
-/* CARD */
 .cafe-card {
   overflow: hidden;
 
@@ -882,7 +846,6 @@
   transform: translateY(-10px);
 }
 
-/* IMAGE */
 .cafe-image {
   position: relative;
 
@@ -900,7 +863,6 @@
   transition: var(--transition);
 }
 
-/* RATING */
 .rating-badge {
   position: absolute;
 
@@ -919,12 +881,10 @@
   color: white;
 }
 
-/* CONTENT */
 .cafe-content {
   padding: 25px;
 }
 
-/* TAG */
 .mood-tag {
   padding: 6px 14px;
 
@@ -937,19 +897,16 @@
   font-size: 0.8rem;
 }
 
-/* LOCATION */
 .cafe-location {
   color: #777;
   font-size: 0.9rem;
 }
 
-/* BUTTON */
 .explore-btn {
   border-radius: var(--radius-full);
   padding: 10px 20px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
 
   .cafe-image {
@@ -958,9 +915,6 @@
 
 }
 
-/* =========================
-   PAGINATION
-========================= */
 
 .custom-pagination {
   gap: 10px;
@@ -997,9 +951,6 @@
   transform: translateY(-3px);
 }
 
-/* =======================================
-   MODAL
-======================================= */
 
 .cafe-modal {
   border-radius: 30px;
@@ -1019,7 +970,7 @@
   object-fit: cover;
 }
 
-/* CLOSE BUTTON */
+
 .modal-close {
   position: absolute;
   top: 20px;
@@ -1033,8 +984,6 @@
   padding: 10px;
 }
 
-
-/* TAG */
 .modal-tag {
 
   padding: 8px 16px;
@@ -1049,7 +998,7 @@
   font-weight: 500;
 }
 
-/* ACTION */
+
 .modal-action {
   display: flex;
   gap: 15px;
@@ -1069,7 +1018,6 @@
   font-weight: 500;
 }
 
-/* SOCIAL */
 .social-btn {
 
   width: 50px;
@@ -1100,13 +1048,11 @@
   transform: translateY(-5px);
 }
 
-/* SAVE ACTIVE */
 #saveButton.saved {
   background: #111;
   color: white;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
 
   .modal-image-wrapper {
@@ -1115,9 +1061,6 @@
 
 }
 
-/* =======================================
-   ABOUT HERO
-======================================= */
 
 .about-hero {
   margin: 40px 40px;
@@ -1188,7 +1131,6 @@
   border: 10px solid white;
 }
 
-/* STORY */
 .story-image {
 
   width: 100%;
@@ -1199,7 +1141,6 @@
   border-radius: 30px;
 }
 
-/* STATS */
 .stats-section {
   background: #111;
 }
@@ -1228,7 +1169,6 @@
   color: #ccc;
 }
 
-/* TEAM */
 .team-card {
 
   overflow: hidden;
@@ -1258,7 +1198,6 @@
   padding: 25px;
 }
 
-/* CTA */
 .cta-box {
 
   padding: 80px 30px;
@@ -1283,7 +1222,6 @@
   color: #198754;
 }
 
-/* RESPONSIVE */
 @media (max-width: 991px) {
 
   .main-image {
